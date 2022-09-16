@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quagera', sans-serif;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+header{
+    background-color: black;  
+    padding-top: 1rem;  
+    padding-bottom: 1rem;  
+}
+
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    
+}
+
+nav{
+    background-color: aliceblue;
+}
+
+nav ul{
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav a:hover{
+    background-color: black;
+    transition: 1s;
+    color: white;
+}
+
+section{
+    margin-bottom: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+section.jumbo{
+    margin-left: 0;
+    margin-right: 0;
+    height: 70vh;
+    background: linear-gradient(rgba(13, 13, 14, 0.8), rgba(8, 8, 8, 0.8)), url(./images/jumbo.jpg) ;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+section .jumbo-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .jumbo-text h1{
+    font-family: 'Quagera', sans-serif;
+    font-size: 5rem;
+}
+
+section .jumbo-text p{
+    font-size: 2rem;
+    font-family: 'BROWN NOW ONE', sans-serif;
+}
+section .product-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .products-header{
+    margin: 1remauto;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+section#products article{
+    width: 350px;
+    margin: 1rem 1rem;
+    color: black;
+}
+
+article#design{    
+    /* border: 1px solid black; */
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+article#design:hover{    
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+article#design .card-img{
+    height: 40vh;
+    background: url(./images/garden\ design.jpg);
+    background-position: center;
+    background-size: cover;
+    /* border-radius: 20px; */
+    filter: grayscale(0%);
+}
+
+article#design .card-img:hover{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+article#design .card-content, article#maintenance .card-content, article#sale .card-content{
+    text-align: center;
+}
+
+article#design .card-content h2, article#maintenance .card-content h2, article#sale .card-content h2{
+    font-size: 20px;
+    margin: 1rem 0rem;
+}
+
+article#maintenance{    
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 10px black;
+    padding: 10px;
+}
+
+article#maintenance:hover{    
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+article#maintenance .card-img{ 
+    height: 40vh;   
+    background: url(./images/garden\ landscape.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0%);
+}
+
+article#maintenance .card-img:hover{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+article#sale{    
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 10px black;
+    padding: 10px;
+}
+
+article#sale:hover{    
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+article#sale .card-img{    
+    height: 40vh; 
+    background: url(./images/nursery.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(0%);
+}
+
+article#sale .card-img:hover{
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    height: 30vh;
+    align-items: center;
+    color: white;
+    padding: 0 3rem;
+    justify-content: center;
+}
+
+footer div{
+    /* flex: 1; */
+}
+
+footer img{
+    width: 60px;
+}
